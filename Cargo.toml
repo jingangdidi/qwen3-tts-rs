@@ -29,10 +29,14 @@ profiling = ["dep:tracing-chrome"]
 
 [dependencies]
 # Candle ML framework
-candle-core = "0.9"
-candle-nn = "0.9"
-candle-transformers = "0.9"
-candle-flash-attn = { version = "0.9", optional = true }
+#candle-core = "0.9"
+candle-core = { git = "https://github.com/jingangdidi/candle", package = "candle-core", branch = "main" }
+#candle-nn = "0.9"
+candle-nn = { git = "https://github.com/jingangdidi/candle", package = "candle-nn", branch = "main" }
+#candle-transformers = "0.9"
+candle-transformers = { git = "https://github.com/jingangdidi/candle", package = "candle-transformers", branch = "main" }
+#candle-flash-attn = { version = "0.9", optional = true }
+candle-flash-attn = { git = "https://github.com/jingangdidi/candle", package = "candle-flash-attn", branch = "main", optional = true }
 
 # Tokenization (HuggingFace tokenizers in Rust)
 tokenizers = "0.22"
