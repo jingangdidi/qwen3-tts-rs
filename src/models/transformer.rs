@@ -334,8 +334,8 @@ impl Attention {
                 &q,
                 &k,
                 &v,
-                /* mask */ None,
-                /* causal */ true,
+                /* mask */ /*None,*/
+                /* causal */ /*true,*/
                 self.scale as f32,
                 /* softcapping */ 1.0,
             )?;
